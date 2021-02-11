@@ -1,0 +1,49 @@
+.hero {
+  background-image: url("../../../../assets/circule.svg");
+  background-repeat: no-repeat;
+  background-position-y: -60rem;
+  background-position-x: center;
+  height: 100vh;
+}
+.hero__container {
+  max-width: var(--screen-size);
+  margin: 0 auto;
+  height: 100%;
+}
+.hero__wrapper {
+  margin: 0 var(--m-horizontal-small);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.hero__images {
+  text-align: center;
+  height: 50%;
+}
+.hero__image {
+  width: 50%;
+  transform: translate(7%, 23%);
+}
+.hero__title {
+  color: var(--blue-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.hero__content {
+  align-self: flex-start;
+  width: 100%;
+  height: 50%;
+}
+.hero__copy {
+  font-family: var(--font-ps);
+  color: var(--blue-dark);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.hero__copy a {
+  color: var(--blue-dark);
+  text-decoration: none;
+}

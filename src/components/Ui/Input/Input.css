@@ -1,0 +1,36 @@
+.form__group {
+  width: 100%;
+  text-align: center;
+  /*
+  background-color: white;
+  padding: 1rem;
+  border-radius: 100px;
+  */
+}
+.form__input {
+  border: none;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+  box-shadow: 2px 15px 29px -5px rgba(56, 86, 110, 0.329);
+  /*box-shadow: 40px 40px 48px -20px rgba(54, 83, 107, 1);*/
+}
+.form__btn {
+  background-color: var(--dark-pink);
+  border: none;
+  border-radius: 10rem;
+  text-decoration: none;
+  font-family: var(--font-ps);
+  color: var(--water-white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.5s ease;
+}

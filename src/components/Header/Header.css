@@ -2,6 +2,7 @@
   /*background-color: rgb(208, 218, 231);*/
   position: fixed;
   width: 100%;
+  z-index: 888;
 }
 .header__container {
   max-width: var(--screen-size);
