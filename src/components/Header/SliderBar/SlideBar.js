@@ -4,12 +4,21 @@ import { IoMdClose } from "react-icons/io"
 import { IconContext } from "react-icons"
 import Button from "../../Ui/Button/Button"
 
-const SlideBar = () => {
+const SlideBar = (props) => {
+  let show = ["s-header__nav"]
+  if (props.show) {
+    show = ["s-header__nav s-header__nav--animate"]
+  } else {
+    show = ["s-header__nav"]
+  }
+
   return (
     <IconContext.Provider value={{ className: "s-header__menu" }}>
-      <nav className='s-header__nav'>
+      <nav className={show.join(" ")}>
         <div className='s-header__close'>
-          <IoMdClose />
+          <div className='s-header__x' onClick={props.clicked}>
+            <IoMdClose />
+          </div>
         </div>
         <ul className='s-header__list'>
           <li className='s-header__item'>

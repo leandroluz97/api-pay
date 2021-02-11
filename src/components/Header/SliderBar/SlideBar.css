@@ -6,13 +6,21 @@
   height: 100vh;
   padding: 4rem 2.7rem;
   background-color: var(--dark-gray-2);
+  background-image: url("../../../assets/circule.svg");
+  background-position: center -30rem;
+  background-repeat: no-repeat;
   transform: translateX(100%);
+  transition: all 0.8s ease;
 }
 .s-header__close {
   text-align: right;
   padding-bottom: 1rem;
   border-bottom: solid 1px #404b56;
   margin-bottom: 3rem;
+}
+.s-header__x {
+  display: inline-block;
+  cursor: pointer;
 }
 .s-header__menu {
   color: white;
@@ -40,15 +48,28 @@
   padding: 2rem 3rem;
 }
 .s-header__btn {
+  margin-top: 2rem;
   list-style: none;
+  width: 100%;
 }
 .s-header__btn a {
-  text-decoration: none;
   display: inline-block;
-  font-family: var(--font-ps);
-  color: var(--water-white);
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding: 1.5rem 4rem;
-  margin-top: 2rem;
+  width: 100%;
+}
+
+.s-header__nav--animate {
+  transform: translateX(0);
+}
+
+@media (min-width: 425px) {
+  .s-header__btn {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .s-header__btn a {
+    display: inline-block;
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
 }

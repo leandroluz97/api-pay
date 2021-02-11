@@ -4,7 +4,7 @@
 :root {
   /*  CCOLORS  */
   --dark-pink: #ba4270;
-  --light-pink: #ba4270;
+  --light-pink: #da6d97;
   --water-white: #fbfcfe;
   --blue-dark: #36536b;
   --blue-light: #edf3f8;
@@ -17,7 +17,7 @@
   --font-ps: "Public Sans", sans-serif;
 
   /*  SIZE  */
-  --screen-size: 1110px;
+  --screen-size: 1160px;
   --m-horizontal-small: 2.5rem;
 }
 

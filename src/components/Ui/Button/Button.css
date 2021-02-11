@@ -1,4 +1,18 @@
 .btn {
   background-color: var(--dark-pink);
-  border-radius: 100px;
+  border-radius: 10rem;
+  text-decoration: none;
+  font-family: var(--font-ps);
+  color: var(--water-white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 10px 10px 48px -20px rgba(54, 83, 107, 1);
+}
+
+.btn:hover {
+  background-color: var(--light-pink);
 }
