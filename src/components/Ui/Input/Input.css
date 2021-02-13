@@ -77,6 +77,12 @@
 }
 
 @media (min-width: 1024px) {
+  .left {
+    margin-left: 0;
+  }
+  .right {
+    margin-right: 0;
+  }
   .form {
     width: 85%;
     transition: all 0.6s ease;

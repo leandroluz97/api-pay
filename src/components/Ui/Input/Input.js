@@ -1,11 +1,15 @@
 import React from "react"
 import "./Input.css"
 const Input = (props) => {
+  const align = ["form"]
+  if (props.right) {
+    align.push("right")
+  }
+  if (props.left) {
+    align.push("left")
+  }
   return (
-    <form
-      className='form'
-      style={{ marginLeft: props.ml, marginRight: props.mr }}
-    >
+    <form className={align.join(" ")}>
       <div className='form__group '>
         <input
           type='email'
