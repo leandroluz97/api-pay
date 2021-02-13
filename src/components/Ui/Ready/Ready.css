@@ -1,7 +1,13 @@
 .ready {
   margin-top: 8rem;
 }
-
+.ready__container {
+  max-width: var(--screen-size);
+  margin: 0 auto;
+}
+.ready__wrapper {
+  margin: 0 var(--m-horizontal-small);
+}
 .ready__title {
   font-size: 3.2rem;
   font-family: var(--font-ms);
@@ -19,7 +25,12 @@
   }
 }
 @media (min-width: 1024px) {
+  .ready__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   .ready__input {
-    margin: auto;
+    width: 60%;
+    margin: 0;
   }
 }

@@ -9,7 +9,7 @@ const Ready = () => {
         <div className='ready__wrapper'>
           <h2 className='ready__title'>Ready to start?</h2>
           <div className='ready__input'>
-            <Input>Schedule a Demo</Input>
+            <Input mr={0}>Schedule a Demo</Input>
           </div>
         </div>
       </div>

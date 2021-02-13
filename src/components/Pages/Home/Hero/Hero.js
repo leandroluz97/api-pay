@@ -19,7 +19,7 @@ const Hero = () => {
               Start building with our APIs for absolutely free.
             </h1>
             <div className='hero__input'>
-              <Input />
+              <Input ml={0} />
             </div>
             <p className='hero__copy'>
               Have any questions?

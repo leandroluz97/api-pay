@@ -1,8 +1,11 @@
 import React from "react"
 import "./Input.css"
-const Input = () => {
+const Input = (props) => {
   return (
-    <form className='form'>
+    <form
+      className='form'
+      style={{ marginLeft: props.ml, marginRight: props.mr }}
+    >
       <div className='form__group '>
         <input
           type='email'
