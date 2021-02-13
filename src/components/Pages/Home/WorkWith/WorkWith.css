@@ -61,10 +61,17 @@
 }
 
 @media (min-width: 1024px) {
+  .work {
+    background-color: var(--dark-gray-2);
+    background-image: url("../../../../assets/circule.svg");
+    background-repeat: no-repeat;
+    background-position-y: -25rem;
+    background-position-x: -20rem;
+  }
   .work__container {
     max-width: var(--screen-size);
     margin: 5rem auto 0 auto;
-    padding: 5rem 0;
+    padding: 10rem 0;
   }
   .work__wrapper {
     display: flex;
@@ -86,6 +93,7 @@
   }
   .work__title {
     text-align: left;
+    margin: 0;
   }
   .work__copy {
     text-align: left;

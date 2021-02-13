@@ -26,8 +26,8 @@
   align-items: flex-end;
 }
 .hero__image {
-  width: 50%;
-  transform: translate(7%, 10%);
+  height: 60%;
+  filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3));
 }
 .hero__title {
   color: var(--blue-dark);
@@ -56,8 +56,12 @@
     height: 60%;
   }
   .hero__image {
-    width: 40%;
-    transform: translate(7%, 10%);
+    width: 30%;
+  }
+  .hero__title {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
   }
 }
 @media (min-width: 768px) {
@@ -70,16 +74,15 @@
     height: 100vh;
   }
   .hero__image {
-    width: 30%;
-    transform: translate(7%, 10%);
+    height: 80%;
   }
 }
 @media (min-width: 1024px) {
   .hero {
     background-image: url("../../../../assets/circule.svg");
     background-repeat: no-repeat;
-    background-position-y: -20rem;
-    background-position-x: 130%;
+    background-position-y: -30rem;
+    background-position-x: 140%;
     background-size: 90rem;
     height: 100vh;
   }
@@ -93,13 +96,13 @@
     text-align: center;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     order: 2;
   }
   .hero__image {
-    width: 85%;
-    transform: translate(35%, 10%);
+    width: 55%;
+    transform: translateX(-40%);
   }
   .hero__content {
     height: 100%;
@@ -108,8 +111,11 @@
     align-items: flex-start;
     flex-direction: column;
     order: 1;
+    width: 60%;
   }
   .hero__title {
+    margin-top: 0;
+    margin-left: 0;
     text-align: left;
     margin-bottom: 6rem;
     font-size: 7.2rem;
