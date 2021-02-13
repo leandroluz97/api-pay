@@ -1,0 +1,40 @@
+.advantage {
+  text-align: center;
+}
+.advantage:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.advantage__img {
+  margin-bottom: 3rem;
+}
+.advantage__title {
+  font-size: 1.8rem;
+  font-family: var(--font-ps);
+  color: var(--blue-dark);
+  margin-bottom: 2rem;
+}
+
+.advantage__copy {
+  font-size: 1.5rem;
+  font-family: var(--font-ps);
+  line-height: 3rem;
+  color: var(--light-blue-2);
+  text-align: center;
+}
+
+@media (min-width: 620px) {
+  .advantage__copy {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .advantage {
+    width: 30%;
+    display: inline-block;
+  }
+  .advantage__copy {
+    width: 100%;
+    margin: 0;
+  }
+}

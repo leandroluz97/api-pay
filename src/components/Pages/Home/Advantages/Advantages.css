@@ -1,0 +1,13 @@
+.advantages__container {
+  max-width: var(--screen-size);
+  margin: auto;
+}
+.advantages__wrapper {
+  margin: 0 var(--m-horizontal-small);
+}
+@media (min-width: 768px) {
+  .advantages__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

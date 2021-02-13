@@ -1,0 +1,25 @@
+.ready {
+  margin-top: 8rem;
+}
+
+.ready__title {
+  font-size: 3.2rem;
+  font-family: var(--font-ms);
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--blue-dark);
+}
+@media (min-width: 768px) {
+  .ready__title {
+    font-size: 4.8rem;
+  }
+  .ready__input {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .ready__input {
+    margin: auto;
+  }
+}
