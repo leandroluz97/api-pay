@@ -1,0 +1,119 @@
+.about {
+  padding-top: 13rem;
+}
+.about__container {
+  max-width: var(--screen-size);
+  margin: 0 auto;
+}
+.about__wrapper {
+  margin: 0 var(--m-horizontal-small);
+}
+.about__title {
+  text-align: center;
+  font-family: var(--font-dm);
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--blue-dark);
+  margin-bottom: 5rem;
+}
+.about__box {
+  margin-bottom: 4rem;
+}
+.about__heading {
+  font-size: 2.4rem;
+  color: var(--blue-dark);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about__copy {
+  font-family: var(--font-ps);
+  color: var(--light-blue-2);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.about__image {
+  background: url("../../../assets/friends.png");
+
+  height: 30rem;
+}
+.about__stats {
+  text-align: center;
+}
+.about__stats:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.about__box--stats {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-bottom: solid 1px var(--disabed);
+  border-top: solid 1px var(--disabed);
+}
+.about__stats-title {
+  font-size: 1.6rem;
+  font-family: var(--font-ps);
+  color: var(--light-blue-2);
+  margin-bottom: 1rem;
+}
+.about__stats-number {
+  font-size: 5.6rem;
+  font-family: var(--font-ms);
+  color: var(--dark-pink);
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .about__title {
+    text-align: center;
+    font-family: var(--font-dm);
+    font-size: 4.8rem;
+    font-weight: 500;
+    color: var(--blue-dark);
+    margin-bottom: 5rem;
+  }
+  .about__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about__heading {
+    font-size: 3.2rem;
+    text-align: left;
+    margin-bottom: 0;
+    width: 30%;
+  }
+  .about__copy {
+    text-align: left;
+    width: 70%;
+  }
+  .about__stats:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+  .about__box--stats {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-bottom: none;
+    border-top: none;
+  }
+  .about__stats {
+    border-bottom: solid 1px var(--disabed);
+    border-top: solid 1px var(--disabed);
+    padding: 2rem 0;
+    text-align: left;
+  }
+  .about__stats:nth-child(1) {
+    width: 28%;
+  }
+  .about__stats:nth-child(2) {
+    width: 34%;
+  }
+  .about__stats:nth-child(3) {
+    width: 34%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__title {
+    text-align: left;
+    width: 70%;
+  }
+}
