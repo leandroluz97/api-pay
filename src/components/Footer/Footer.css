@@ -47,6 +47,11 @@
   color: white;
   font-size: 3rem;
   margin: 1rem;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.react__icons:hover {
+  color: var(--light-pink);
 }
 
 @media (min-width: 768px) {

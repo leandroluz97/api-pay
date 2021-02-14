@@ -2,8 +2,12 @@ import React from "react"
 import "./Sbutton.css"
 
 const Sbutton = (props) => {
+  let btnClass = "sbutton"
+  if (props.dark) {
+    btnClass = "sdark"
+  }
   return (
-    <a className='sbutton' href='#'>
+    <a className={btnClass} href='#'>
       {props.children}
     </a>
   )
