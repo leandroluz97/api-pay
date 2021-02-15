@@ -10,7 +10,7 @@ const Contact = () => {
             Submit a help request and we’ll get in touch shortly.
           </h2>
           <div className='contact__content'>
-            <div>
+            <div className='c-group'>
               <form className='contact__form'>
                 <input
                   type='text'
