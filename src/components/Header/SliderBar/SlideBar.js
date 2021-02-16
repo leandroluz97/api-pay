@@ -3,6 +3,7 @@ import "./SlideBar.css"
 import { IoMdClose } from "react-icons/io"
 import { IconContext } from "react-icons"
 import Button from "../../Ui/Button/Button"
+import { Link } from "react-router-dom"
 
 const SlideBar = (props) => {
   let show = ["s-header__nav"]
@@ -21,14 +22,20 @@ const SlideBar = (props) => {
           </div>
         </div>
         <ul className='s-header__list'>
-          <li className='s-header__item'>
-            <a href='#'>Pricing</a>
+          <li className='s-header__item' onClick={props.clicked}>
+            <Link to='/pricing' onClick={props.scroll}>
+              Pricing
+            </Link>
           </li>
-          <li className='s-header__item'>
-            <a href='#'>About</a>
+          <li className='s-header__item' onClick={props.clicked}>
+            <Link to='/about' onClick={props.scroll}>
+              About
+            </Link>
           </li>
-          <li className='s-header__item'>
-            <a href='#'>Contact</a>
+          <li className='s-header__item' onClick={props.clicked}>
+            <Link to='/contact' onClick={props.scroll}>
+              Contact
+            </Link>
           </li>
           <li className='s-header__btn'>
             <Button>Schedule a Demo</Button>

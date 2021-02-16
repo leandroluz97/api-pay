@@ -1,6 +1,7 @@
 import React from "react"
 import Cbutton from "../../Ui/cButton/Cbutton"
 import "./Contact.css"
+import Ready from "../../Ui/Ready/Ready"
 const Contact = () => {
   return (
     <section className='contact'>
@@ -87,6 +88,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Ready />
     </section>
   )
 }

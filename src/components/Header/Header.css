@@ -3,6 +3,10 @@
   position: fixed;
   width: 100%;
   z-index: 888;
+  transition: all 0.4s ease;
+}
+.header--animation {
+  background-color: var(--blue-light);
 }
 .header__container {
   max-width: var(--screen-size);
@@ -14,6 +18,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 4rem 0 2rem 0;
+  transition: all 0.4s ease;
+}
+.header__wrapper--animation {
+  padding: 2rem 0 2rem 0;
 }
 
 .header__nav {
