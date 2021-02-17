@@ -19,6 +19,12 @@
   background-color: var(--blue-dark);
 }
 
+.c-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /*
     text-decoration: none;
     color: var(--blue-dark);
