@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import Cbutton from "../../Ui/cButton/Cbutton"
 import "./Contact.css"
 import Ready from "../../Ui/Ready/Ready"
+import emailjs from "emailjs-com"
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: {
@@ -51,6 +53,7 @@ const Contact = () => {
       valid = true
       error = ""
     }
+
     //test email
     if (
       type === "email" &&
@@ -85,6 +88,45 @@ const Contact = () => {
     setFormData(allData)
     setDisabled(disabled)
   }
+
+  const {
+    REACT_APP_YOUR_SERVICE_ID,
+    REACT_APP_YOUR_TEMPLATE_ID,
+    REACT_APP_YOUR_USER_ID,
+  } = process.env
+
+  function sendEmail(e) {
+    e.preventDefault()
+
+    console.log(e.target)
+
+    emailjs
+      .sendForm(
+        REACT_APP_YOUR_SERVICE_ID,
+        REACT_APP_YOUR_TEMPLATE_ID,
+        e.target,
+        REACT_APP_YOUR_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+
+    e.target.reset()
+    let formValues = { ...formData }
+    for (const key in formValues) {
+      formValues[key].value = ""
+      formValues[key].validation = "required"
+      formValues[key].valid = false
+      formValues[key].error = ""
+    }
+
+    setFormData(formValues)
+  }
   return (
     <section className='contact'>
       <div className='contact__container'>
@@ -94,7 +136,7 @@ const Contact = () => {
           </h2>
           <div className='contact__content'>
             <div className='c-group'>
-              <form className='contact__form'>
+              <form className='contact__form' onSubmit={sendEmail}>
                 <div className='f-group'>
                   <input
                     type='text'
