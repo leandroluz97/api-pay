@@ -6,18 +6,13 @@ import SlideBar from "./SliderBar/SlideBar"
 import Button from "../Ui/Button/Button"
 import { Link } from "react-router-dom"
 
-const Header = () => {
+const Header = (props) => {
   const [open, setOpen] = useState(false)
   const [height, setHeight] = useState(false)
   const handleSideMenu = () => {
     setOpen(!open)
   }
-  const handleScrollTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-    })
-  }
+
   const addHeaderBackgroung = (e) => {
     if (window.scrollY > 80) {
       setHeight(true)
@@ -39,7 +34,7 @@ const Header = () => {
             }
           >
             <div className='header__logo--box'>
-              <Link to='/'>
+              <Link to='/' onClick={props.handleScrollTop}>
                 <img
                   className='header__logo'
                   src='./images/logo_pay_api.svg'
@@ -51,24 +46,24 @@ const Header = () => {
             <nav className='header__nav'>
               <ul className='header__list'>
                 <li className='header__item'>
-                  <Link to='/pricing' onClick={handleScrollTop}>
+                  <Link to='/pricing' onClick={props.handleScrollTop}>
                     Pricing
                   </Link>
                 </li>
                 <li className='header__item'>
-                  <Link to='/about' onClick={handleScrollTop}>
+                  <Link to='/about' onClick={props.handleScrollTop}>
                     About
                   </Link>
                 </li>
                 <li className='header__item'>
-                  <Link to='/contact' onClick={handleScrollTop}>
+                  <Link to='/contact' onClick={props.handleScrollTop}>
                     Contact
                   </Link>
                 </li>
               </ul>
             </nav>
 
-            <div className='header__burger' onClick={handleSideMenu}>
+            <div className='header__burger' onClick={props.handleSideMenu}>
               <IoMdMenu />
             </div>
 
@@ -79,8 +74,8 @@ const Header = () => {
         </div>
         <SlideBar
           show={open}
-          clicked={handleSideMenu}
-          scroll={handleScrollTop}
+          clicked={props.handleSideMenu}
+          scroll={props.handleScrollTop}
         />
       </header>
     </IconContext.Provider>

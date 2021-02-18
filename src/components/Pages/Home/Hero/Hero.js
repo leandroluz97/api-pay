@@ -1,7 +1,7 @@
 import React from "react"
 import Input from "../../../Ui/Input/Input"
 import "./Hero.css"
-
+import { Link } from "react-router-dom"
 const Hero = () => {
   return (
     <section className='hero'>
@@ -23,9 +23,9 @@ const Hero = () => {
             </div>
             <p className='hero__copy'>
               Have any questions?
-              <a href='#'>
+              <Link to='/contact'>
                 <strong> Contact Us</strong>
-              </a>
+              </Link>
             </p>
           </div>
         </div>

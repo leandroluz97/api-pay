@@ -9,16 +9,22 @@ import Contact from "./components/Pages/Contact/Contact"
 import { Switch, Route, Link } from "react-router-dom"
 
 const App = () => {
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+    })
+  }
   return (
     <>
-      <Header />
+      <Header handleScrollTop={handleScrollTop} />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/pricing' component={Pricing} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
       </Switch>
-      <Footer />
+      <Footer handleScrollTop={handleScrollTop} />
     </>
   )
 }
