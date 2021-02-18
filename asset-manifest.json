@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/pay-api/static/css/main.0b4c3038.chunk.css",
-    "main.js": "/pay-api/static/js/main.1c9d382c.chunk.js",
-    "main.js.map": "/pay-api/static/js/main.1c9d382c.chunk.js.map",
+    "main.js": "/pay-api/static/js/main.b52af6f0.chunk.js",
+    "main.js.map": "/pay-api/static/js/main.b52af6f0.chunk.js.map",
     "runtime-main.js": "/pay-api/static/js/runtime-main.2e1a562e.js",
     "runtime-main.js.map": "/pay-api/static/js/runtime-main.2e1a562e.js.map",
-    "static/js/2.98eca257.chunk.js": "/pay-api/static/js/2.98eca257.chunk.js",
-    "static/js/2.98eca257.chunk.js.map": "/pay-api/static/js/2.98eca257.chunk.js.map",
+    "static/js/2.b6a99ac9.chunk.js": "/pay-api/static/js/2.b6a99ac9.chunk.js",
+    "static/js/2.b6a99ac9.chunk.js.map": "/pay-api/static/js/2.b6a99ac9.chunk.js.map",
     "index.html": "/pay-api/index.html",
     "static/css/main.0b4c3038.chunk.css.map": "/pay-api/static/css/main.0b4c3038.chunk.css.map",
-    "static/js/2.98eca257.chunk.js.LICENSE.txt": "/pay-api/static/js/2.98eca257.chunk.js.LICENSE.txt",
+    "static/js/2.b6a99ac9.chunk.js.LICENSE.txt": "/pay-api/static/js/2.b6a99ac9.chunk.js.LICENSE.txt",
     "static/media/Footer.css": "/pay-api/static/media/circule.bf32dc38.svg",
     "static/media/About.css": "/pay-api/static/media/friends.9cd1d853.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2e1a562e.js",
-    "static/js/2.98eca257.chunk.js",
+    "static/js/2.b6a99ac9.chunk.js",
     "static/css/main.0b4c3038.chunk.css",
-    "static/js/main.1c9d382c.chunk.js"
+    "static/js/main.b52af6f0.chunk.js"
   ]
 }
