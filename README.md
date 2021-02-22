@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Pay Api 
 
 Pay Api is a responsive and mobile first website
 On this project was used:
