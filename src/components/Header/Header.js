@@ -63,7 +63,7 @@ const Header = (props) => {
               </ul>
             </nav>
 
-            <div className='header__burger' onClick={props.handleSideMenu}>
+            <div className='header__burger' onClick={handleSideMenu}>
               <IoMdMenu />
             </div>
 
@@ -74,7 +74,7 @@ const Header = (props) => {
         </div>
         <SlideBar
           show={open}
-          clicked={props.handleSideMenu}
+          clicked={handleSideMenu}
           scroll={props.handleScrollTop}
         />
       </header>
