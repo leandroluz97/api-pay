@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pay-api/static/css/main.0b4c3038.chunk.css",
-    "main.js": "/pay-api/static/js/main.b52af6f0.chunk.js",
-    "main.js.map": "/pay-api/static/js/main.b52af6f0.chunk.js.map",
+    "main.js": "/pay-api/static/js/main.4f0b480a.chunk.js",
+    "main.js.map": "/pay-api/static/js/main.4f0b480a.chunk.js.map",
     "runtime-main.js": "/pay-api/static/js/runtime-main.2e1a562e.js",
     "runtime-main.js.map": "/pay-api/static/js/runtime-main.2e1a562e.js.map",
     "static/js/2.b6a99ac9.chunk.js": "/pay-api/static/js/2.b6a99ac9.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2e1a562e.js",
     "static/js/2.b6a99ac9.chunk.js",
     "static/css/main.0b4c3038.chunk.css",
-    "static/js/main.b52af6f0.chunk.js"
+    "static/js/main.4f0b480a.chunk.js"
   ]
 }
